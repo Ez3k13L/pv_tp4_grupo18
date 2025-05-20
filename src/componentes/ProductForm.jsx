@@ -23,7 +23,7 @@ function ProductForm({ onAgregar, onEditar, productoEditado }) {
         if (
       form.descripcion.trim() === '' ||
       form.precioUnitario <= 0 ||
-      form.descuento < 0 ||s
+      form.descuento < 0 ||
       form.stock < 0
     ) {
       alert('Revisá los datos ingresados: No pueden estar vacíos ni ser negativos.');
