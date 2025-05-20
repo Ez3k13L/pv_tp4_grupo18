@@ -20,6 +20,15 @@ function ProductForm({ onAgregar, onEditar, productoEditado }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+        if (
+      form.descripcion.trim() === '' ||
+      form.precioUnitario <= 0 ||
+      form.descuento < 0 ||
+      form.stock < 0
+    ) {
+      alert('Revisá los datos ingresados: no pueden estar vacíos ni ser negativos.');
+      return;
+    }
     const precioConDescuento =
       form.precioUnitario * (1 - form.descuento / 100);
 
@@ -83,6 +92,7 @@ function ProductForm({ onAgregar, onEditar, productoEditado }) {
       <button type="submit">{productoEditado ? 'Actualizar' : 'Agregar'}</button>
     </form>
   );
+  
 }
 
 export default ProductForm;

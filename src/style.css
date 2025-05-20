@@ -68,3 +68,8 @@ button:hover {
   margin: 0.25rem 0;
   color: #333;
 }
+
+input {
+  color: #000000;              
+   background-color: #ffffff
+}
