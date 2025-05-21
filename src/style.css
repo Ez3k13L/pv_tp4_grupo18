@@ -1,9 +1,11 @@
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #e9f1fb;
   margin: 0;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -72,4 +74,33 @@ button:hover {
 input {
   color: #000000;              
    background-color: #ffffff
+}
+
+.tabla-productos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+  border: 1px solid #cce1f5;
+  padding: 0.5rem;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.tabla-productos th {
+  background-color: #e9f1fb;
+  color: #1a4d80;
+}
+
+.tabla-productos td {
+  white-space: nowrap;
+}
+
+.tabla-productos td button {
+  display: inline-block;
+  margin: 0 0.25rem;
+  vertical-align: middle;
 }
